@@ -8,7 +8,7 @@ export function Footer() {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-[#000000] to-[#5A3BFF]">
-              <img src="/Acro Logo only.png" alt="Acro Impressões 3D" />
+              <img src="/LogoAcro.png" alt="Acro Impressões 3D" />
             </div>
             <span className="text-sm font-semibold text-foreground">
               Acro Impressões 3D

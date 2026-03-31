@@ -24,7 +24,7 @@ export function Header() {
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#000000] to-[#5A3BFF] shadow-lg shadow-[#7B5CFF]/25 transition-transform group-hover:scale-105">
-              <img src="/Acro Logo only.png" alt="Acro Impressões 3D" />
+              <img src="/LogoAcro.png" alt="Acro Impressões 3D" />
             </div>
             <span className="text-lg font-bold text-foreground">
               Acro <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7B5CFF] to-[#5A3BFF]">Impressões 3D</span>
