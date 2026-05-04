@@ -18,10 +18,14 @@ export function ProductCatalog() {
   const catalogRef = useRef<HTMLElement>(null)
 
   // Scroll to top of catalog when page changes
+  const shouldScroll = useRef(false)
+
   useEffect(() => {
-    if (catalogRef.current) {
+    if (shouldScroll.current && catalogRef.current) {
       catalogRef.current.scrollIntoView({ behavior: "smooth", block: "start" })
     }
+
+    shouldScroll.current = false
   }, [currentPage])
 
   // Filter products
@@ -120,7 +124,10 @@ export function ProductCatalog() {
         <Pagination
           currentPage={currentPage}
           totalPages={totalPages}
-          onPageChange={(page) => setCurrentPage(page)}
+          onPageChange={(page) => {
+            shouldScroll.current = true
+            setCurrentPage(page)
+          }}
         />
 
         {/* Product Modal */}
